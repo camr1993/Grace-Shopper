@@ -3,7 +3,6 @@ import {connect} from 'react-redux'
 import {updateBar} from '../store/searchBar'
 import Paper from '@material-ui/core/Paper'
 import InputBase from '@material-ui/core/InputBase'
-import Divider from '@material-ui/core/Divider'
 import SearchIcon from '@material-ui/icons/Search'
 
 class DisconnectedSearchBar extends Component {
@@ -27,8 +26,6 @@ class DisconnectedSearchBar extends Component {
         >
           <SearchIcon id="search-icon" />
           <InputBase
-            // fullWidth={true}
-            // margin="dense"
             className="searchbar-input"
             tabIndex="1"
             color="secondary"

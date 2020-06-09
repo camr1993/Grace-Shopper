@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-// import {checkoutThunk} from '../store/cart'
 import CheckCircleTwoToneIcon from '@material-ui/icons/CheckCircle'
 
 class DisconnectedSubmitPage extends Component {

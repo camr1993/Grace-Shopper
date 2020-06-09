@@ -31,7 +31,6 @@ class DisconnectedOrderHistory extends Component {
     }
 
     return (
-      // [[ { }, { }], [{ }, { }]]
       <div className="container-1-orders">
         <div id="order-title">Your Orders</div>
         {!groupedOrders.length && (
