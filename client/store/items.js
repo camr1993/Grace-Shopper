@@ -86,7 +86,7 @@ export default function itemsReducer(state = defaultItems, action) {
       const newItemList = state.filter(
         (item) => item.id !== action.updatedItem.id
       )
-      return [...newItemList, action.updatedItem] //i think we can just map here instead
+      return [...newItemList, action.updatedItem]
     case POSTED_ITEM:
       return [...state, action.newItem]
     default:

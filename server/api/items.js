@@ -51,10 +51,8 @@ router.put('/checkout', async (req, res, next) => {
 
 //ADMIN ONLY - POST A NEW ITEM TO INVENTORY
 router.post('/', isAdminMiddleware, async (req, res, next) => {
-  //need is isAdmin middleware here
   try {
     res.json(await Item.create(req.body))
-    // right now we don't actually make use of the response in our store
   } catch (err) {
     next(err)
   }
@@ -75,14 +73,6 @@ router.put('/:itemId', isAdminMiddleware, async (req, res, next) => {
   try {
     res.status(200)
     res.json(await req.currentItem.update(req.body))
-    // const itemId = req.params.itemId
-    // const [, item] = await Item.update(req.body, {
-    //   where: {
-    //     id: itemId,
-    //   },
-    //   returning: true,
-    //   plain: true,
-    // })
   } catch (error) {
     next(error)
   }

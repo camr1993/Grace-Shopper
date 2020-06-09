@@ -66,7 +66,6 @@ router.get(
 //ADD ITEM TO CART, IF ALREADY THERE UPDATE ITEM IN CART
 // Expecting the new total quantity of the cart. (Not incrementing)
 router.put('/:userId', isCurrentUserMiddleware, async (req, res, next) => {
-  //Only current user should be allowed to do this?? idk if this is something to address
   try {
     //SECURITY ALERT
     const itemId = req.body.itemId
@@ -116,7 +115,6 @@ router.delete(
 
 //UPDATE USER PROFILE
 router.put('/profile/:userId', async (req, res, next) => {
-  //I THINK ADMIN AND CURRENT USER CAN USE
   try {
     res.status(200)
     res.json(await req.currentUser.update(req.body))
@@ -129,7 +127,6 @@ router.put('/profile/:userId', async (req, res, next) => {
 router.delete('/:userId', async (req, res, next) => {
   //SECURITY ALERT
   try {
-    console.log('REACHED HEREEEEEEE')
     await req.currentUser.destroy()
     res.sendStatus(204)
   } catch (error) {

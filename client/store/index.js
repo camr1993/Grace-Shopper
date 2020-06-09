@@ -56,10 +56,3 @@ store.subscribe(() => saveStateToStorage(store.getState()))
 
 export default store
 export * from './user'
-
-// after reducer is combined:
-// reducer: {
-//   items: [{}, {}, {},]
-//   user: {},
-//   cart: [{}, {}, {}]
-// }

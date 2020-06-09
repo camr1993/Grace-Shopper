@@ -1,7 +1,6 @@
 // Seeding Instructions:
 // Add a name, price, quantity, imageUrl, and sport to the END of their respective
 // arrays. That process will seed 1 item
-// IMPORTANT
 
 const names = [
   'Basketball Hoop',

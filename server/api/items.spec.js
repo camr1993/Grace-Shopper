@@ -95,12 +95,6 @@ describe('Item routes', () => {
       const updatedItems = await request(app).get('/api/items')
       expect(updatedItems.body.length).to.be.equal(4)
     })
-    // it('POST /api/items/ responds with new Item??', async () => {
-
-    // })
-    // it('POST /api/items/ only works for Admins', async () => {
-
-    // })
     it('DELETE /api/items/:itemId deletes an item from inventory', async () => {
       const allItems = await request(app).get('/api/items')
       expect(allItems.body.length).to.be.equal(3)
@@ -108,7 +102,6 @@ describe('Item routes', () => {
       const updatedItems = await request(app).get('/api/items')
       expect(updatedItems.body.length).to.be.equal(2)
     })
-    // it('DELETE /api/items/ only works for Admins', async () => {})
     it('PUT /api/items/:itemId updates item info', async () => {
       const item = await request(app).get(`/api/items/1`)
       expect(item.body.name).to.be.equal('Toilet Paper')
@@ -138,6 +131,5 @@ describe('Item routes', () => {
       expect(updatedItem.body.name).to.be.equal('Tissues')
       expect(updatedItem.body.quantity).to.be.equal(2)
     })
-    // it('PUT /api/items/:itemId only works for Admins', async () => {})
   })
 })

@@ -92,19 +92,6 @@ async function seed() {
     })
   )
 
-  // let seedingTimes = 7
-  // for (let i = 0; i < seedingTimes; i++) {
-  //   for (let j = 0; j < names.length; j++) {
-  //     Item.create({
-  //       name: names[j],
-  //       price: prices[j],
-  //       quantity: quantities[j],
-  //       imageUrl: imageUrls[j],
-  //       sport: sports[j],
-  //     })
-  //   }
-  // }
-
   const Carts = await Promise.all([
     Cart.create({
       name: 'Basketball Hoop',
