@@ -55,7 +55,7 @@ export default class homeCarousel extends Component {
               />
               <ImgMediaCard
                 sport="football"
-                imageUrl="https://usatftw.files.wordpress.com/2019/10/usp-ncaa-football_-georgia-southern-at-minnesota.jpg?w=1000&h=600&crop=1"
+                imageUrl="https://cdn.britannica.com/26/135626-050-377B43F1/Drew-Brees-Jason-Hatcher-National-Football-League-Dec-19-2009.jpg"
               />
               <ImgMediaCard
                 sport="football"
