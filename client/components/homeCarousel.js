@@ -51,11 +51,11 @@ export default class homeCarousel extends Component {
             <div className="container-row">
               <ImgMediaCard
                 sport="football"
-                imageUrl="https://journalistsresource.org/wp-content/uploads/2017/10/keith-johnston-football-unsplash-720x480.jpg"
+                imageUrl="https://cdn.britannica.com/26/135626-050-377B43F1/Drew-Brees-Jason-Hatcher-National-Football-League-Dec-19-2009.jpg"
               />
               <ImgMediaCard
                 sport="football"
-                imageUrl="https://usatftw.files.wordpress.com/2019/10/usp-ncaa-football_-georgia-southern-at-minnesota.jpg?w=1000&h=600&crop=1"
+                imageUrl="https://journalistsresource.org/wp-content/uploads/2017/10/keith-johnston-football-unsplash-720x480.jpg"
               />
               <ImgMediaCard
                 sport="football"
