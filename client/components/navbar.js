@@ -54,7 +54,7 @@ const Navbar = ({
           {isLoggedIn ? (
             <NavLink to="/user/profile">{avatarLogic(user)}</NavLink>
           ) : (
-            <NavLink to="/signup">{avatarLogic(user)}</NavLink>
+            <NavLink to="/login">{avatarLogic(user)}</NavLink>
           )}
           <NavLink to="/cart" onClick={() => updateSearch('')}>
             <StyledCart cartTotal={cart.reduce(cartItemReducer, 0)} />
