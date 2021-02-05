@@ -97,10 +97,11 @@ button {
 
 .auth-container {
   width: 30em;
-  padding: 20px;
+  padding: 20px 40px;
   padding-top: 1px;
   border: 1px solid #ededed;
   margin-top: 30px;
+  background-color: #fff;
 }
 
 .auth-container h2 {
